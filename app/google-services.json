@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "591959646729",
+    "firebase_url": "https://authproject-dfa7f.firebaseio.com",
+    "project_id": "authproject-dfa7f",
+    "storage_bucket": "authproject-dfa7f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591959646729:android:801a1c33daac34b6068ed8",
+        "android_client_info": {
+          "package_name": "com.example.pruebaandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "591959646729-5j106aq2kqd4c5bdb04f2kc62d6iovnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHujnsdkvBjdGvzhVjCSL0evvpxpLVXX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "591959646729-5j106aq2kqd4c5bdb04f2kc62d6iovnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DetailProduct">
+
+    <TextView
+        android:text="TITLE"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtNameDetailProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TextView>
+    <ImageView
+        android:id="@+id/imgViewDetailProduct"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtNameDetailProduct"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingHorizontal="10dp"
+        android:layout_below="@id/imgViewDetailProduct"
+        android:id="@+id/txtDetailDescriptionProduct"
+        android:layout_height="wrap_content">
+    </TextView>
+    <LinearLayout
+        android:id="@+id/lvPrice"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtDetailDescriptionProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="clip_horizontal"
+        >
+        <TextView
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="PRECIO"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/txtDetailPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="$2.50"
+            android:textColor="@color/colorPrimaryDark">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/lvCounter"
+        android:paddingHorizontal="10dp"
+        android:layout_below="@id/lvPrice"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar Cantidad"></TextView>
+
+        <EditText
+            android:id="@+id/edTxtCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minEms="1"
+            android:ems="10"
+            android:inputType="time" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnDetailAddShop"
+        android:layout_marginHorizontal="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lvCounter"
+        android:layout_width="match_parent"
+        android:text="Agregar a Carrito"
+        android:layout_height="wrap_content">
+    </Button>
+
+</RelativeLayout>
